@@ -1,0 +1,16 @@
+.episodelist-container {
+    animation: moveInBottom 1.3s ease-out;
+
+    & table tbody tr {
+        background-color: $color-grey-light-1;
+        transition: all .3s ease-out;
+    
+        &:nth-child(2n) {
+            background-color: $color-grey-light-2;
+        }
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

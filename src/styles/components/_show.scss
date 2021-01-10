@@ -1,0 +1,11 @@
+.show-container {
+    animation:moveInLeft 1s ease-out ;
+
+    @include respond(tab-port) {
+        padding-top: 3rem;
+    }
+}
+
+.show-container img {
+    border-radius: 10px;
+}
