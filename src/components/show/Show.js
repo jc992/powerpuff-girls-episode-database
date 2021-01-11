@@ -30,7 +30,7 @@ export const ShowContainer = () => {
 
     return (
         <Fragment>
-            <Show></Show>
+            <Show />
         </Fragment>
     );
 };

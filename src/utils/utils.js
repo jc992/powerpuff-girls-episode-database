@@ -5,7 +5,7 @@ import ClipLoader from "react-spinners/ClipLoader";
  */
 export const EnhancedClipLoader = () => {
     return (
-        <ClipLoader css={'display: block; margin: 25% auto;'}/>
+        <ClipLoader css={'display: block; margin: 25% auto;'} />
     );
 };
 

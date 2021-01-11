@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 /**
  * Renders specific episode information.
@@ -38,9 +38,9 @@ export const EpisodeDetailContainer = ({ episode }) => {
     );
 
     return (
-        <div>
+        <Fragment>
             <Episode />
-        </div>
+        </Fragment>
     );
 };
 

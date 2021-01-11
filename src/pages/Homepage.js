@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ShowContainer from '../components/show/Show';
 import EpisodeListContainer from '../components/episode/EpisodeList';
 
 const Homepage = () => {
-        
+
     return (
-        <div>
-            <ShowContainer></ShowContainer>
-            <EpisodeListContainer></EpisodeListContainer>
-        </div>
+        <Fragment>
+            <ShowContainer />
+            <EpisodeListContainer />
+        </Fragment>
     );
 };
 

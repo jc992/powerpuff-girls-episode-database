@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { EpisodeDetailContainer } from '../components/episode/EpisodeDetail';
 import { Context } from '../context/Context';
 import { EnhancedClipLoader } from '../utils/utils';
@@ -20,10 +20,10 @@ const EpisodeDetailsPage = ({ match }) => {
     let episode = episodeList.filter(episode => episode.season === parseInt(season) && episode.number === parseInt(number))[0]
 
     return (
-        < div >
+        <Fragment>
             <EpisodeDetailContainer
                 episode={episode} />
-        </div >
+        </Fragment>
     );
 };
 

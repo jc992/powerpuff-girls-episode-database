@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/navbar/Navbar';
@@ -11,7 +11,7 @@ import './styles/style.css';
 const App = () => {
 
   return (
-    <div>
+    <Fragment>
       <Navbar />
       <Switch>
         <Route
@@ -23,9 +23,11 @@ const App = () => {
           path="/episodes/:season/:number"
           component={EpisodeDetailsPage}
         />
-        <Route path="*" component={NotFound} />
+        <Route
+          path="*"
+          component={NotFound} />
       </Switch>
-    </div>
+    </Fragment>
   );
 };
 
