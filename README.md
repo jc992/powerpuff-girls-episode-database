@@ -38,10 +38,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 Compiles main.scss file into style.css file being used in project.
 
 ## Project Structure
-
-### components - reusable React components.
-### config - Application and API configuration.
-### context - configuration of Context API and Application State.
-### pages - components that represent pages.
-### styles - basic application styles and 7-1 architeture with SCSS.
-### utils - small helpers that can be used across Application.
+```
+components - reusable React components.
+config - Application and API configuration.
+context - configuration of Context API and Application State.
+pages - components that represent pages.
+styles - basic application styles and 7-1 architeture with SCSS.
+utils - small helpers that can be used across Application.
+```
