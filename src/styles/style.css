@@ -260,6 +260,7 @@ a {
     .episodelist-container table tbody tr:nth-child(2n) {
       background-color: #eee; }
     .episodelist-container table tbody tr:hover {
+      color: #fff;
       background-color: #777; }
 
 .row {
