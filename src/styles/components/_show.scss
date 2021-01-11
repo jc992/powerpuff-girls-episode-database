@@ -4,8 +4,12 @@
     @include respond(tab-port) {
         padding-top: 3rem;
     }
-}
 
-.show-container img {
-    border-radius: 10px;
+    & img {
+        border-radius: 10px;
+    }
+
+    & h3 {
+        margin-bottom: $gutter-vertical-small;
+    }
 }

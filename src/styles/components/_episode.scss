@@ -4,9 +4,13 @@
     @include respond(tab-port) {
         padding-top: 3rem;
     }
-}
 
-.episode-container img {
-    border-radius: 10px;
-    animation: moveInLeft 1.5s ease-out;
+    & img {
+        border-radius: 10px;
+        animation: moveInLeft 1.5s ease-out;
+    }
+
+    & h3 {
+        margin-bottom: $gutter-vertical-small;
+    }
 }

@@ -63,7 +63,7 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Varela Round", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   @media (max-width: 56.25em) {
@@ -214,10 +214,11 @@ a {
   @media (max-width: 56.25em) {
     .episode-container {
       padding-top: 3rem; } }
-
-.episode-container img {
-  border-radius: 10px;
-  animation: moveInLeft 1.5s ease-out; }
+  .episode-container img {
+    border-radius: 10px;
+    animation: moveInLeft 1.5s ease-out; }
+  .episode-container h3 {
+    margin-bottom: 0.5rem; }
 
 .navbar {
   position: fixed;
@@ -234,19 +235,32 @@ a {
   @media (max-width: 56.25em) {
     .show-container {
       padding-top: 3rem; } }
-
-.show-container img {
-  border-radius: 10px; }
+  .show-container img {
+    border-radius: 10px; }
+  .show-container h3 {
+    margin-bottom: 0.5rem; }
 
 .episodelist-container {
   animation: moveInBottom 1.3s ease-out; }
+  .episodelist-container table thead tr {
+    background-color: #eee;
+    text-align: left;
+    padding-left: .5rem; }
+    .episodelist-container table thead tr th {
+      padding: .5rem 1rem;
+      border: 1.5px double #999; }
   .episodelist-container table tbody tr {
-    background-color: #f7f7f7;
+    text-align: left;
+    line-height: 2rem;
+    background-color: #999;
     transition: all .3s ease-out; }
+    .episodelist-container table tbody tr td {
+      padding: .1rem 1rem;
+      border: 1.5px double #999; }
     .episodelist-container table tbody tr:nth-child(2n) {
       background-color: #eee; }
     .episodelist-container table tbody tr:hover {
-      transform: scale(1.1); }
+      background-color: #777; }
 
 .row {
   max-width: 114rem;
