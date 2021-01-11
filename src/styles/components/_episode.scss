@@ -13,4 +13,11 @@
     & h3 {
         margin-bottom: $gutter-vertical-small;
     }
+
+    & p {
+        padding: .5rem 1rem;
+        border: 1.5px outset $color-black;
+        border-radius: 5px;
+        background-color: $color-grey-light-2;
+    }
 }

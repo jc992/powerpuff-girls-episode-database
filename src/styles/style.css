@@ -219,6 +219,11 @@ a {
     animation: moveInLeft 1.5s ease-out; }
   .episode-container h3 {
     margin-bottom: 0.5rem; }
+  .episode-container p {
+    padding: .5rem 1rem;
+    border: 1.5px outset #000;
+    border-radius: 5px;
+    background-color: #eee; }
 
 .navbar {
   position: fixed;

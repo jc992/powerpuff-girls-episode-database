@@ -19,7 +19,7 @@ export const EpisodeDetailContainer = ({ episode }) => {
         return (
             summary
                 ? <span dangerouslySetInnerHTML={{ __html: summary }}></span>
-                : <span>There is no description.</span>
+                : <span><p>There is no description.</p></span>
         );
     };
 
