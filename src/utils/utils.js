@@ -1,4 +1,5 @@
 import ClipLoader from "react-spinners/ClipLoader";
+import { END_SCROLL_GIF } from '../config/endpoints';
 
 /**
  * Renders clip loader while fetching data from API.
@@ -13,9 +14,22 @@ export const EnhancedClipLoader = () => {
  * Conditionally render a clip loader when loading more table data, or an image if all data has been rendered.
  */
 export const InfiniteScrollClipLoader = ({ condition }) => {
-    return condition ? <EnhancedClipLoader /> : <img src={END_SCROLL_GIF} alt="No more episodes" style={{marginTop:'5rem'}}></img>
+    return condition
+        ? <EnhancedClipLoader />
+        : <Gif
+            className="u-margin-top-big"
+            gifSource={END_SCROLL_GIF}
+            alt="No more episodes" />
 };
 
-export const NOT_FOUND_GIF = 'https://64.media.tumblr.com/ad51ba9e793cbc4c80fa9b84b3dc9583/tumblr_mzq9i35By51s2r8npo1_500.gif';
-
-export const END_SCROLL_GIF = 'https://64.media.tumblr.com/561a8344d12d202c2817cfafe200b498/tumblr_pqe0izHYmZ1vtwr9o_540.gif'
+/**
+ * Re-usable Animated Gif Component.
+ */
+export const Gif = ({ className, gifSource, alt, message }) => {
+    return (
+        <div className={className}>
+            <img src={gifSource} alt={alt}></img>
+            {message ? <h1>{message}</h1> : null}
+        </div>
+    );
+};

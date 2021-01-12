@@ -1,12 +1,14 @@
 import React from 'react';
-import { NOT_FOUND_GIF } from '../utils/utils';
+import { NOT_FOUND_GIF } from '../config/endpoints';
+import { Gif } from '../utils/utils';
 
 export const NotFound = () => {
     return (
-        <div className="notfound-container">
-            <img src={NOT_FOUND_GIF} alt="Invalid Route"></img>
-            <h1>404 Page Not Found</h1>
-        </div>
+        <Gif
+            className="notfound-container"
+            gifSource={NOT_FOUND_GIF}
+            alt="Invalid Route"
+            message="404 Page Not Found" />
     );
 };
 
