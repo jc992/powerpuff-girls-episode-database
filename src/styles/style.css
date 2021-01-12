@@ -148,6 +148,16 @@ a {
   border-bottom-right-radius: 10px;
   background-color: #28b485; }
 
+.notfound-container img {
+  border-radius: 10px;
+  margin: 2rem auto; }
+  @media (max-width: 56.25em) {
+    .notfound-container img {
+      margin-top: 5rem; } }
+  @media (max-width: 37.5em) {
+    .notfound-container img {
+      width: 100%; } }
+
 .show-container {
   margin-bottom: 2rem;
   animation: moveInLeft 1s ease-out; }

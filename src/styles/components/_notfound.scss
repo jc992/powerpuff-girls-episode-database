@@ -1,0 +1,15 @@
+.notfound-container {
+
+    & img {
+        border-radius: 10px;
+        margin: $gutter-vertical auto;
+
+        @include respond(tab-port) {
+            margin-top: $gutter-vertical-huge;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}
