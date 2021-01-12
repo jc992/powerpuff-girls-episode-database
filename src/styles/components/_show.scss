@@ -1,4 +1,5 @@
 .show-container {
+    margin-bottom: $gutter-vertical;
     animation:moveInLeft 1s ease-out ;
 
     @include respond(tab-port) {

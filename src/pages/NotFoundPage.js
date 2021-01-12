@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import { NotFoundGif } from '../utils/utils';
+import { NOT_FOUND_GIF } from '../utils/utils';
 
 export const NotFound = () => {
     return (
         <Fragment>
-            <img src={NotFoundGif} alt="Invalid Route" style={{ borderRadius: '10px' }}></img>
+            <img src={NOT_FOUND_GIF} alt="Invalid Route" style={{ borderRadius: '10px' }}></img>
             <h1>404 Page Not Found</h1>
         </Fragment>
     );

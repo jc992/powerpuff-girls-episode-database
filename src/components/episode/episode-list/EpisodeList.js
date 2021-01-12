@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, Fragment } from 'react'
 import Header from './Header';
 import EpisodeListBody from './EpisodeListBody';
 import { Context } from '../../../context/Context';
@@ -22,7 +22,14 @@ export const EpisodeList = () => {
     };
 
     return (
-        <div>
+        <Fragment>
+            {/**
+             * Infinitely load content using a React Component. Check https://www.npmjs.com/package/react-infinite-scroller for more detailed information.
+             * @prop {String} className Specify a CSS class.
+             * @prop {Function} loadMore A callback when more items are requested by the user.
+             * @prop {Boolean} hasMore Whether there are more items to be loaded.
+             * @prop {Component} loader A React component to render while more items are loading.
+             */}
             <InfiniteScroll
                 className="episodelist-container"
                 loadMore={handleLoadMore}
@@ -39,7 +46,7 @@ export const EpisodeList = () => {
                         lastRowIndex={lastRowIndex} />
                 </table>
             </InfiniteScroll>
-        </div>
+        </Fragment>
     );
 };
 

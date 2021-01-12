@@ -3,8 +3,8 @@ import { API_SHOW_URL, API_EPISODELIST_URL } from './endpoints';
 
 /**
  * Retrieves show & episode list from API, a sets data to respective hooks.
- * @param {function} setShow Hook for setting show state.
- * @param {function} setEpisodeList  Hook for setting episode list state.
+ * @param {Function} setShow Hook for setting show state.
+ * @param {Function} setEpisodeList  Hook for setting episode list state.
  */
 export const fetchAllData = (setShow, setEpisodeList) => {
     const showData = axios.get(API_SHOW_URL);

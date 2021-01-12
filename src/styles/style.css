@@ -149,6 +149,7 @@ a {
   background-color: #28b485; }
 
 .show-container {
+  margin-bottom: 2rem;
   animation: moveInLeft 1s ease-out; }
   @media (max-width: 56.25em) {
     .show-container {
