@@ -1,4 +1,5 @@
 import React from 'react';
+import { EnhancedClipLoader } from '../../../utils/utils';
 import Image from './Image';
 import Summary from './Summary';
 
@@ -7,6 +8,7 @@ import Summary from './Summary';
  */
 export const EpisodeDetail = ({ episode }) => {
     
+    if (episode === undefined) return <EnhancedClipLoader />
     const { name, image, summary } = episode;
 
     return (

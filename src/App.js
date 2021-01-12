@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
-
 import Navbar from './components/navbar/Navbar';
+
 import Homepage from './pages/Homepage';
 import EpisodeDetailsPage from './pages/EpisodeDetailsPage';
 import NotFound from './pages/NotFoundPage';
