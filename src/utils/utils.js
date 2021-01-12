@@ -9,6 +9,9 @@ export const EnhancedClipLoader = () => {
     );
 };
 
+/**
+ * Conditionally render a clip loader when loading more table data, or an image if all data has been rendered.
+ */
 export const InfiniteScrollClipLoader = ({ condition }) => {
     return condition ? <EnhancedClipLoader /> : <img src={END_SCROLL_GIF} alt="No more episodes" style={{marginTop:'5rem'}}></img>
 };
