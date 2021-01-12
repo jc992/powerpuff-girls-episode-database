@@ -5,12 +5,14 @@ import React from 'react';
  */
 export const Header = () => {
     return (
-        <tr>
-            <th>Season</th>
-            <th>Episode</th>
-            <th>Name</th>
-            <th>Air Date</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Episode</th>
+                <th>Name</th>
+                <th>Air Date</th>
+            </tr>
+        </thead>
     );
 };
 

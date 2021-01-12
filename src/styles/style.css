@@ -180,6 +180,11 @@ a {
     .episodelist-container table tbody tr:hover {
       color: #fff;
       background-color: #777; }
+  .episodelist-container img {
+    border-radius: 10px; }
+    @media (max-width: 37.5em) {
+      .episodelist-container img {
+        width: 100%; } }
 
 .row {
   max-width: 114rem;

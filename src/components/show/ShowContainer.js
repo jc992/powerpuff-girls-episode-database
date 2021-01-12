@@ -5,7 +5,6 @@ import Show from './Show';
  * Renders container with show details.
  */
 export const ShowContainer = () => {
-
     return (
         <Fragment>
             <Show />

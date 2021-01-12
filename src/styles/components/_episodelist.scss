@@ -32,4 +32,12 @@
             background-color: $color-grey-dark;
         }
     }
+
+    & img {
+        border-radius:10px;
+
+        @include respond(phone) {
+            width:100%;
+        }
+    }
 }
