@@ -14,7 +14,7 @@ const EpisodeDetailsPage = ({ match, history }) => {
     let episode;
 
     /**
-     * This guarantees that if you don't get stuck waiting for the page to render if you try to access a nonexistent episode.
+     * Guarantee that you don't get stuck waiting for the page to render if you try to access a nonexistent episode.
      */
     useEffect(() => {
         setTimeout(() => {
