@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from 'react';
-import { EpisodeDetailContainer } from '../components/episode/EpisodeDetail';
+import { EpisodeDetailContainer } from '../components/episode/EpisodeDetail/EpisodeDetailContainer';
 import { Context } from '../context/Context';
 import { EnhancedClipLoader } from '../utils/utils';
 
