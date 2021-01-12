@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import EpisodeList from './EpisodeList';
 
 /**
- * Renders a table containing episode list.
+ * Renders container with episode list.
  */
 export const EpisodeListContainer = () => {
 
