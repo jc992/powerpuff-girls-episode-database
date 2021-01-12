@@ -1,9 +1,9 @@
 import React, { useContext, Fragment } from 'react'
+import InfiniteScroll from 'react-infinite-scroller';
 import Header from './Header';
 import EpisodeListBody from './EpisodeListBody';
 import { Context } from '../../../context/Context';
 import { EnhancedClipLoader, InfiniteScrollClipLoader } from '../../../utils/utils';
-import InfiniteScroll from 'react-infinite-scroller';
 
 /**
  * Renders a table containing episode list.

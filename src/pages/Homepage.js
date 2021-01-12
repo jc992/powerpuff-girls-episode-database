@@ -3,7 +3,6 @@ import ShowContainer from '../components/show/Show';
 import EpisodeListContainer from '../components/episode/episode-list/EpisodeListContainer';
 
 const Homepage = () => {
-
     return (
         <Fragment>
             <ShowContainer />

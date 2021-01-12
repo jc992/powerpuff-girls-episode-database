@@ -20,6 +20,7 @@ const App = () => {
           component={Homepage}
         />
         <Route
+          exact
           path="/episodes/:season/:number"
           component={EpisodeDetailsPage}
         />

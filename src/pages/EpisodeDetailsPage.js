@@ -7,7 +7,6 @@ import { EnhancedClipLoader } from '../utils/utils';
  * Returns specific episode details page.
  */
 const EpisodeDetailsPage = ({ match }) => {
-
     const context = useContext(Context);
     const { episodeList } = context;
     const { number, season } = match.params;
