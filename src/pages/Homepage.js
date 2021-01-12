@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import ShowContainer from '../components/show/Show';
-import EpisodeListContainer from '../components/episode/EpisodeList';
+import EpisodeListContainer from '../components/episode/episode-list/EpisodeListContainer';
 
 const Homepage = () => {
 
